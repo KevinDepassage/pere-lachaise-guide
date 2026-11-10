@@ -1,0 +1,19 @@
+{
+  "name": "Père-Lachaise guidé",
+  "short_name": "Père-Lachaise",
+  "description": "Visite guidée vocale et géolocalisée des cimetières : choisir une personnalité, puis suivre les consignes jusqu'à sa tombe.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eceeea",
+  "theme_color": "#2b6c5e",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%232b6c5e'/%3E%3Cpath d='M256 96c-62 0-104 44-104 100v220h208V196c0-56-42-100-104-100z' fill='%23f9faf7'/%3E%3Cpath d='M256 170v120M206 220h100' stroke='%238f6a1c' stroke-width='22' stroke-linecap='round'/%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
