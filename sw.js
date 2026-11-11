@@ -2,7 +2,7 @@
    Page et fichiers de données du site : réseau d'abord (pour recevoir les mises à jour), cache en secours.
    Polices et photos : cache d'abord. Les API (Overpass, Wikidata) ne sont pas mises en cache ici :
    la page conserve elle-même la base complète dans le stockage local. */
-const CACHE = "plg-v3";
+const CACHE = "plg-v4";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./tombes-pl.json", "./osm-pl.json"];
 
 self.addEventListener("install", e => {
