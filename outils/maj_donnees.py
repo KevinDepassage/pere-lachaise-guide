@@ -155,7 +155,7 @@ def construire_osm(cfg, cem, N, W, R):
         if not inside(lat, lon, 10): continue
         if not polys and dist((lat, lon), (cem["lat0"], cem["lon0"])) > 600: continue
         memo = t.get("historic") in ("memorial", "monument"); tk = toks(t["name"])
-        if any(dist((k["lat"], k["lon"]), (lat, lon)) < 35 and toks(k["n"]) & tk for k in curated): continue
+        if any(dist((k["lat"], k["lon"]), (lat, lon)) < (150 if k.get("pl") else 35) and toks(k["n"]) & tk for k in curated): continue  # plan officiel prioritaire
         if any(k["n"] == t["name"] and dist((k["lat"], k["lon"]), (lat, lon)) < 8 for k in tombs): continue
         div, est = "", False
         sec = next((d for d, r in sectors if in_ring(lat, lon, r)), None)
